@@ -16,11 +16,11 @@ LOCAL_PATH := vendor/samsung/sc03e
 
 # Radio
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/proprietary/system/lib/libsec-ril.so:system/vendor/lib/libsec-ril.so \
-    $(LOCAL_PATH)/proprietary/system/vendor/lib/libril-qcril-hook-oem.so:system/vendor/lib/libril-qcril-hook-oem.so
+    $(LOCAL_PATH)/proprietary/system/vendor/lib/libsec-ril.so:system/vendor/lib/libsec-ril.so \
+    $(LOCAL_PATH)/proprietary/system/vendor/lib/libril-qcril-hook-oem.so:system/lib/libril-qcril-hook-oem.so
 
-#PRODUCT_COPY_FILES += \
-#    $(LOCAL_PATH)/proprietary/system/lib/libstlport.so:system/vendor/lib/libstlport.so
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/proprietary/system/lib/libstlport.so:system/lib/libstlport.so
 
 # Radio 
 #PRODUCT_COPY_FILES += \
@@ -29,14 +29,14 @@ PRODUCT_COPY_FILES += \
 #    $(LOCAL_PATH)/proprietary/system/bin/rild:system/vendor/bin/hw/rild
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/proprietary/system/bin/at_distributor:system/vendor/bin/at_distributor \
-    $(LOCAL_PATH)/proprietary/system/bin/diag_uart_log:system/vendor/bin/diag_uart_log \
-    $(LOCAL_PATH)/proprietary/system/bin/efsks:system/vendor/bin/efsks \
-    $(LOCAL_PATH)/proprietary/system/bin/ks:system/vendor/bin/ks \
-    $(LOCAL_PATH)/proprietary/system/bin/qcks:system/vendor/bin/qcks \
-    $(LOCAL_PATH)/proprietary/system/bin/qmiproxy:system/vendor/bin/qmiproxy \
-    $(LOCAL_PATH)/proprietary/system/bin/qmuxd:system/vendor/bin/qmuxd \
-    $(LOCAL_PATH)/proprietary/system/bin/smdexe:system/vendor/bin/smdexe
+    $(LOCAL_PATH)/proprietary/system/vendor/bin/at_distributor:system/vendor/bin/at_distributor \
+    $(LOCAL_PATH)/proprietary/system/vendor/bin/diag_uart_log:system/vendor/bin/diag_uart_log \
+    $(LOCAL_PATH)/proprietary/system/vendor/bin/efsks:system/vendor/bin/efsks \
+    $(LOCAL_PATH)/proprietary/system/vendor/bin/ks:system/vendor/bin/ks \
+    $(LOCAL_PATH)/proprietary/system/vendor/bin/qcks:system/vendor/bin/qcks \
+    $(LOCAL_PATH)/proprietary/system/vendor/bin/qmiproxy:system/vendor/bin/qmiproxy \
+    $(LOCAL_PATH)/proprietary/system/vendor/bin/qmuxd:system/vendor/bin/qmuxd \
+    $(LOCAL_PATH)/proprietary/system/vendor/bin/smdexe:system/vendor/bin/smdexe
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/system/etc/Diag.cfg:system/etc/Diag.cfg \
@@ -57,13 +57,13 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/system/usr/keylayout/sec_touchkey.kl:system/usr/keylayout/sec_touchkey.kl
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/proprietary/system/vendor/lib/libqmi.so:system/vendor/lib/libqmi.so \
-    $(LOCAL_PATH)/proprietary/system/vendor/lib/libqmi_cci.so:system/vendor/lib/libqmi_cci.so \
-    $(LOCAL_PATH)/proprietary/system/vendor/lib/libqmi_client_qmux.so:system/vendor/lib/libqmi_client_qmux.so \
-    $(LOCAL_PATH)/proprietary/system/vendor/lib/libqmi_common_so.so:system/vendor/lib/libqmi_common_so.so \
-    $(LOCAL_PATH)/proprietary/system/vendor/lib/libqmi_csi.so:system/vendor/lib/libqmi_csi.so \
-    $(LOCAL_PATH)/proprietary/system/vendor/lib/libqmi_encdec.so:system/vendor/lib/libqmi_encdec.so \
-    $(LOCAL_PATH)/proprietary/system/vendor/lib/libqmiservices.so:system/vendor/lib/libqmiservices.so
+    $(LOCAL_PATH)/proprietary/system/vendor/lib/libqmi.so:system/lib/libqmi.so \
+    $(LOCAL_PATH)/proprietary/system/vendor/lib/libqmi_cci.so:system/lib/libqmi_cci.so \
+    $(LOCAL_PATH)/proprietary/system/vendor/lib/libqmi_client_qmux.so:system/lib/libqmi_client_qmux.so \
+    $(LOCAL_PATH)/proprietary/system/vendor/lib/libqmi_common_so.so:system/lib/libqmi_common_so.so \
+    $(LOCAL_PATH)/proprietary/system/vendor/lib/libqmi_csi.so:system/lib/libqmi_csi.so \
+    $(LOCAL_PATH)/proprietary/system/vendor/lib/libqmi_encdec.so:system/lib/libqmi_encdec.so \
+    $(LOCAL_PATH)/proprietary/system/vendor/lib/libqmiservices.so:system/lib/libqmiservices.so
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/system/vendor/lib/libdiag.so:system/vendor/lib/libdiag.so \
